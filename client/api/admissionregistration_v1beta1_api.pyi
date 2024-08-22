@@ -21,7 +21,7 @@ class AdmissionregistrationV1beta1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_validating_admission_policy(
         self,
         body: kubernetes.client.V1beta1ValidatingAdmissionPolicy,
@@ -31,7 +31,7 @@ class AdmissionregistrationV1beta1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_validating_admission_policy(
         self,
         *,
@@ -50,14 +50,14 @@ class AdmissionregistrationV1beta1Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_validating_admission_policy(
         self,
         name: str,
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_validating_admission_policy(
         self,
         name: str,
@@ -68,7 +68,7 @@ class AdmissionregistrationV1beta1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_validating_admission_policy(
         self,
         name: str,
@@ -80,7 +80,7 @@ class AdmissionregistrationV1beta1Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_validating_admission_policy(
         self,
         name: str,
@@ -92,14 +92,14 @@ class AdmissionregistrationV1beta1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_validating_admission_policy_status(
         self,
         name: str,
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_validating_admission_policy_status(
         self,
         name: str,
@@ -110,7 +110,7 @@ class AdmissionregistrationV1beta1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_validating_admission_policy_status(
         self,
         name: str,
@@ -122,7 +122,7 @@ class AdmissionregistrationV1beta1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_validating_admission_policy_binding(
         self,
         *,
@@ -138,7 +138,7 @@ class AdmissionregistrationV1beta1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_validating_admission_policy_binding(
         self,
         body: kubernetes.client.V1beta1ValidatingAdmissionPolicyBinding,
@@ -148,7 +148,7 @@ class AdmissionregistrationV1beta1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_validating_admission_policy_binding(
         self,
         *,
@@ -167,14 +167,14 @@ class AdmissionregistrationV1beta1Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_validating_admission_policy_binding(
         self,
         name: str,
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_validating_admission_policy_binding(
         self,
         name: str,
@@ -185,7 +185,7 @@ class AdmissionregistrationV1beta1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_validating_admission_policy_binding(
         self,
         name: str,
@@ -197,7 +197,7 @@ class AdmissionregistrationV1beta1Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_validating_admission_policy_binding(
         self,
         name: str,
@@ -209,4 +209,4 @@ class AdmissionregistrationV1beta1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...

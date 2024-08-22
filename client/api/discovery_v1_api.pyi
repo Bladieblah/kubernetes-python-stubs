@@ -21,7 +21,7 @@ class DiscoveryV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_namespaced_endpoint_slice(
         self,
         namespace: str,
@@ -38,7 +38,7 @@ class DiscoveryV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_namespaced_endpoint_slice(
         self,
         namespace: str,
@@ -49,7 +49,7 @@ class DiscoveryV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_namespaced_endpoint_slice(
         self,
         namespace: str,
@@ -69,7 +69,7 @@ class DiscoveryV1Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespaced_endpoint_slice(
         self,
         name: str,
@@ -77,7 +77,7 @@ class DiscoveryV1Api:
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_endpoint_slice(
         self,
         name: str,
@@ -89,7 +89,7 @@ class DiscoveryV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_namespaced_endpoint_slice(
         self,
         name: str,
@@ -102,7 +102,7 @@ class DiscoveryV1Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_endpoint_slice(
         self,
         name: str,
@@ -115,4 +115,4 @@ class DiscoveryV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...

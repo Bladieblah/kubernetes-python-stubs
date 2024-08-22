@@ -22,7 +22,7 @@ class PolicyV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_namespaced_pod_disruption_budget(
         self,
         namespace: str,
@@ -33,7 +33,7 @@ class PolicyV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_namespaced_pod_disruption_budget(
         self,
         namespace: str,
@@ -53,7 +53,7 @@ class PolicyV1Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespaced_pod_disruption_budget(
         self,
         name: str,
@@ -61,7 +61,7 @@ class PolicyV1Api:
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_pod_disruption_budget(
         self,
         name: str,
@@ -73,7 +73,7 @@ class PolicyV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_namespaced_pod_disruption_budget(
         self,
         name: str,
@@ -86,7 +86,7 @@ class PolicyV1Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_pod_disruption_budget(
         self,
         name: str,
@@ -99,7 +99,7 @@ class PolicyV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespaced_pod_disruption_budget_status(
         self,
         name: str,
@@ -107,7 +107,7 @@ class PolicyV1Api:
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_pod_disruption_budget_status(
         self,
         name: str,
@@ -119,7 +119,7 @@ class PolicyV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_pod_disruption_budget_status(
         self,
         name: str,
@@ -132,7 +132,7 @@ class PolicyV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_pod_disruption_budget_for_all_namespaces(
         self,
         *,
@@ -148,4 +148,4 @@ class PolicyV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...

@@ -21,7 +21,7 @@ class StorageV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_csi_driver(
         self,
         body: kubernetes.client.V1CSIDriver,
@@ -31,7 +31,7 @@ class StorageV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_csi_driver(
         self,
         *,
@@ -50,7 +50,7 @@ class StorageV1Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_csi_driver(self, name: str, *, pretty: typing.Optional[str] = ...) -> kubernetes.client.V1CSIDriver: ...
     def replace_csi_driver(
         self,
@@ -62,7 +62,7 @@ class StorageV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_csi_driver(
         self,
         name: str,
@@ -74,7 +74,7 @@ class StorageV1Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_csi_driver(
         self,
         name: str,
@@ -86,7 +86,7 @@ class StorageV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_csi_node(
         self,
         *,
@@ -102,7 +102,7 @@ class StorageV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_csi_node(
         self,
         body: kubernetes.client.V1CSINode,
@@ -112,7 +112,7 @@ class StorageV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_csi_node(
         self,
         *,
@@ -131,7 +131,7 @@ class StorageV1Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_csi_node(self, name: str, *, pretty: typing.Optional[str] = ...) -> kubernetes.client.V1CSINode: ...
     def replace_csi_node(
         self,
@@ -143,7 +143,7 @@ class StorageV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_csi_node(
         self,
         name: str,
@@ -155,7 +155,7 @@ class StorageV1Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_csi_node(
         self,
         name: str,
@@ -167,7 +167,7 @@ class StorageV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_csi_storage_capacity_for_all_namespaces(
         self,
         *,
@@ -183,7 +183,7 @@ class StorageV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_namespaced_csi_storage_capacity(
         self,
         namespace: str,
@@ -200,7 +200,7 @@ class StorageV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_namespaced_csi_storage_capacity(
         self,
         namespace: str,
@@ -211,7 +211,7 @@ class StorageV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_namespaced_csi_storage_capacity(
         self,
         namespace: str,
@@ -231,7 +231,7 @@ class StorageV1Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespaced_csi_storage_capacity(
         self,
         name: str,
@@ -239,7 +239,7 @@ class StorageV1Api:
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_csi_storage_capacity(
         self,
         name: str,
@@ -251,7 +251,7 @@ class StorageV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_namespaced_csi_storage_capacity(
         self,
         name: str,
@@ -264,7 +264,7 @@ class StorageV1Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_csi_storage_capacity(
         self,
         name: str,
@@ -277,7 +277,7 @@ class StorageV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_storage_class(
         self,
         *,
@@ -293,7 +293,7 @@ class StorageV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_storage_class(
         self,
         body: kubernetes.client.V1StorageClass,
@@ -303,7 +303,7 @@ class StorageV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_storage_class(
         self,
         *,
@@ -322,14 +322,14 @@ class StorageV1Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_storage_class(
         self,
         name: str,
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_storage_class(
         self,
         name: str,
@@ -340,7 +340,7 @@ class StorageV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_storage_class(
         self,
         name: str,
@@ -352,7 +352,7 @@ class StorageV1Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_storage_class(
         self,
         name: str,
@@ -364,7 +364,7 @@ class StorageV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_volume_attachment(
         self,
         *,
@@ -380,7 +380,7 @@ class StorageV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_volume_attachment(
         self,
         body: kubernetes.client.V1VolumeAttachment,
@@ -390,7 +390,7 @@ class StorageV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_volume_attachment(
         self,
         *,
@@ -409,14 +409,14 @@ class StorageV1Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_volume_attachment(
         self,
         name: str,
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_volume_attachment(
         self,
         name: str,
@@ -427,7 +427,7 @@ class StorageV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_volume_attachment(
         self,
         name: str,
@@ -439,7 +439,7 @@ class StorageV1Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_volume_attachment(
         self,
         name: str,
@@ -451,14 +451,14 @@ class StorageV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_volume_attachment_status(
         self,
         name: str,
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_volume_attachment_status(
         self,
         name: str,
@@ -469,7 +469,7 @@ class StorageV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_volume_attachment_status(
         self,
         name: str,
@@ -481,4 +481,4 @@ class StorageV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...

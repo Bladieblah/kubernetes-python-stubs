@@ -21,7 +21,7 @@ class ApiregistrationV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_api_service(
         self,
         body: kubernetes.client.V1APIService,
@@ -31,7 +31,7 @@ class ApiregistrationV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_api_service(
         self,
         *,
@@ -50,7 +50,7 @@ class ApiregistrationV1Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_api_service(self, name: str, *, pretty: typing.Optional[str] = ...) -> kubernetes.client.V1APIService: ...
     def replace_api_service(
         self,
@@ -62,7 +62,7 @@ class ApiregistrationV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_api_service(
         self,
         name: str,
@@ -74,7 +74,7 @@ class ApiregistrationV1Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_api_service(
         self,
         name: str,
@@ -86,14 +86,14 @@ class ApiregistrationV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_api_service_status(
         self,
         name: str,
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_api_service_status(
         self,
         name: str,
@@ -104,7 +104,7 @@ class ApiregistrationV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_api_service_status(
         self,
         name: str,
@@ -116,4 +116,4 @@ class ApiregistrationV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...

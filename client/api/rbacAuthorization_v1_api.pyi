@@ -21,7 +21,7 @@ class RbacAuthorizationV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_cluster_role_binding(
         self,
         body: kubernetes.client.V1ClusterRoleBinding,
@@ -31,7 +31,7 @@ class RbacAuthorizationV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_cluster_role_binding(
         self,
         *,
@@ -50,14 +50,14 @@ class RbacAuthorizationV1Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_cluster_role_binding(
         self,
         name: str,
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_cluster_role_binding(
         self,
         name: str,
@@ -68,7 +68,7 @@ class RbacAuthorizationV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_cluster_role_binding(
         self,
         name: str,
@@ -80,7 +80,7 @@ class RbacAuthorizationV1Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_cluster_role_binding(
         self,
         name: str,
@@ -92,7 +92,7 @@ class RbacAuthorizationV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_cluster_role(
         self,
         *,
@@ -108,7 +108,7 @@ class RbacAuthorizationV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_cluster_role(
         self,
         body: kubernetes.client.V1ClusterRole,
@@ -118,7 +118,7 @@ class RbacAuthorizationV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_cluster_role(
         self,
         *,
@@ -137,14 +137,14 @@ class RbacAuthorizationV1Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_cluster_role(
         self,
         name: str,
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_cluster_role(
         self,
         name: str,
@@ -155,7 +155,7 @@ class RbacAuthorizationV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_cluster_role(
         self,
         name: str,
@@ -167,7 +167,7 @@ class RbacAuthorizationV1Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_cluster_role(
         self,
         name: str,
@@ -179,7 +179,7 @@ class RbacAuthorizationV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_namespaced_role_binding(
         self,
         namespace: str,
@@ -196,7 +196,7 @@ class RbacAuthorizationV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_namespaced_role_binding(
         self,
         namespace: str,
@@ -207,7 +207,7 @@ class RbacAuthorizationV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_namespaced_role_binding(
         self,
         namespace: str,
@@ -227,7 +227,7 @@ class RbacAuthorizationV1Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespaced_role_binding(
         self,
         name: str,
@@ -235,7 +235,7 @@ class RbacAuthorizationV1Api:
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_role_binding(
         self,
         name: str,
@@ -247,7 +247,7 @@ class RbacAuthorizationV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_namespaced_role_binding(
         self,
         name: str,
@@ -260,7 +260,7 @@ class RbacAuthorizationV1Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_role_binding(
         self,
         name: str,
@@ -273,7 +273,7 @@ class RbacAuthorizationV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_namespaced_role(
         self,
         namespace: str,
@@ -290,7 +290,7 @@ class RbacAuthorizationV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_namespaced_role(
         self,
         namespace: str,
@@ -301,7 +301,7 @@ class RbacAuthorizationV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_namespaced_role(
         self,
         namespace: str,
@@ -321,7 +321,7 @@ class RbacAuthorizationV1Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespaced_role(
         self,
         name: str,
@@ -329,7 +329,7 @@ class RbacAuthorizationV1Api:
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_role(
         self,
         name: str,
@@ -341,7 +341,7 @@ class RbacAuthorizationV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_namespaced_role(
         self,
         name: str,
@@ -354,7 +354,7 @@ class RbacAuthorizationV1Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_role(
         self,
         name: str,
@@ -367,7 +367,7 @@ class RbacAuthorizationV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_role_binding_for_all_namespaces(
         self,
         *,
@@ -383,7 +383,7 @@ class RbacAuthorizationV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_role_for_all_namespaces(
         self,
         *,
@@ -399,4 +399,4 @@ class RbacAuthorizationV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...

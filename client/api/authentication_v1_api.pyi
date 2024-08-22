@@ -15,7 +15,7 @@ class AuthenticationV1Api:
         field_validation: typing.Optional[str] = ...,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_token_review(
         self,
         body: kubernetes.client.V1TokenReview,
@@ -25,4 +25,4 @@ class AuthenticationV1Api:
         field_validation: typing.Optional[str] = ...,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...

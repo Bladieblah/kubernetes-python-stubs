@@ -21,7 +21,7 @@ class FlowcontrolApiserverV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_flow_schema(
         self,
         body: kubernetes.client.V1FlowSchema,
@@ -31,7 +31,7 @@ class FlowcontrolApiserverV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_flow_schema(
         self,
         *,
@@ -50,7 +50,7 @@ class FlowcontrolApiserverV1Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_flow_schema(self, name: str, *, pretty: typing.Optional[str] = ...) -> kubernetes.client.V1FlowSchema: ...
     def replace_flow_schema(
         self,
@@ -62,7 +62,7 @@ class FlowcontrolApiserverV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_flow_schema(
         self,
         name: str,
@@ -74,7 +74,7 @@ class FlowcontrolApiserverV1Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_flow_schema(
         self,
         name: str,
@@ -86,14 +86,14 @@ class FlowcontrolApiserverV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_flow_schema_status(
         self,
         name: str,
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_flow_schema_status(
         self,
         name: str,
@@ -104,7 +104,7 @@ class FlowcontrolApiserverV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_flow_schema_status(
         self,
         name: str,
@@ -116,7 +116,7 @@ class FlowcontrolApiserverV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_priority_level_configuration(
         self,
         *,
@@ -132,7 +132,7 @@ class FlowcontrolApiserverV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_priority_level_configuration(
         self,
         body: kubernetes.client.V1PriorityLevelConfiguration,
@@ -142,7 +142,7 @@ class FlowcontrolApiserverV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_priority_level_configuration(
         self,
         *,
@@ -161,14 +161,14 @@ class FlowcontrolApiserverV1Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_priority_level_configuration(
         self,
         name: str,
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_priority_level_configuration(
         self,
         name: str,
@@ -179,7 +179,7 @@ class FlowcontrolApiserverV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_priority_level_configuration(
         self,
         name: str,
@@ -191,7 +191,7 @@ class FlowcontrolApiserverV1Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_priority_level_configuration(
         self,
         name: str,
@@ -203,14 +203,14 @@ class FlowcontrolApiserverV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_priority_level_configuration_status(
         self,
         name: str,
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_priority_level_configuration_status(
         self,
         name: str,
@@ -221,7 +221,7 @@ class FlowcontrolApiserverV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_priority_level_configuration_status(
         self,
         name: str,
@@ -233,4 +233,4 @@ class FlowcontrolApiserverV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...

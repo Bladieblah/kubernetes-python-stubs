@@ -21,14 +21,14 @@ class CoreV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_component_status(
         self,
         name: str,
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_config_map_for_all_namespaces(
         self,
         *,
@@ -44,7 +44,7 @@ class CoreV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_endpoints_for_all_namespaces(
         self,
         *,
@@ -60,7 +60,7 @@ class CoreV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_event_for_all_namespaces(
         self,
         *,
@@ -76,7 +76,7 @@ class CoreV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_limit_range_for_all_namespaces(
         self,
         *,
@@ -92,7 +92,7 @@ class CoreV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_namespace(
         self,
         *,
@@ -108,7 +108,7 @@ class CoreV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_namespace(
         self,
         body: kubernetes.client.V1Namespace,
@@ -118,7 +118,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_namespaced_binding(
         self,
         namespace: str,
@@ -129,7 +129,7 @@ class CoreV1Api:
         field_validation: typing.Optional[str] = ...,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_namespaced_config_map(
         self,
         namespace: str,
@@ -146,7 +146,7 @@ class CoreV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_namespaced_config_map(
         self,
         namespace: str,
@@ -157,7 +157,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_namespaced_config_map(
         self,
         namespace: str,
@@ -177,7 +177,7 @@ class CoreV1Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespaced_config_map(
         self,
         name: str,
@@ -185,7 +185,7 @@ class CoreV1Api:
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_config_map(
         self,
         name: str,
@@ -197,7 +197,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_namespaced_config_map(
         self,
         name: str,
@@ -210,7 +210,7 @@ class CoreV1Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_config_map(
         self,
         name: str,
@@ -223,7 +223,7 @@ class CoreV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_namespaced_endpoints(
         self,
         namespace: str,
@@ -240,7 +240,7 @@ class CoreV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_namespaced_endpoints(
         self,
         namespace: str,
@@ -251,7 +251,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_namespaced_endpoints(
         self,
         namespace: str,
@@ -271,7 +271,7 @@ class CoreV1Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespaced_endpoints(
         self,
         name: str,
@@ -279,7 +279,7 @@ class CoreV1Api:
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_endpoints(
         self,
         name: str,
@@ -291,7 +291,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_namespaced_endpoints(
         self,
         name: str,
@@ -304,7 +304,7 @@ class CoreV1Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_endpoints(
         self,
         name: str,
@@ -317,7 +317,7 @@ class CoreV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_namespaced_event(
         self,
         namespace: str,
@@ -334,7 +334,7 @@ class CoreV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_namespaced_event(
         self,
         namespace: str,
@@ -345,7 +345,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_namespaced_event(
         self,
         namespace: str,
@@ -365,7 +365,7 @@ class CoreV1Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespaced_event(
         self,
         name: str,
@@ -373,7 +373,7 @@ class CoreV1Api:
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_event(
         self,
         name: str,
@@ -385,7 +385,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_namespaced_event(
         self,
         name: str,
@@ -398,7 +398,7 @@ class CoreV1Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_event(
         self,
         name: str,
@@ -411,7 +411,7 @@ class CoreV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_namespaced_limit_range(
         self,
         namespace: str,
@@ -428,7 +428,7 @@ class CoreV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_namespaced_limit_range(
         self,
         namespace: str,
@@ -439,7 +439,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_namespaced_limit_range(
         self,
         namespace: str,
@@ -459,7 +459,7 @@ class CoreV1Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespaced_limit_range(
         self,
         name: str,
@@ -467,7 +467,7 @@ class CoreV1Api:
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_limit_range(
         self,
         name: str,
@@ -479,7 +479,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_namespaced_limit_range(
         self,
         name: str,
@@ -492,7 +492,7 @@ class CoreV1Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_limit_range(
         self,
         name: str,
@@ -505,7 +505,7 @@ class CoreV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_namespaced_persistent_volume_claim(
         self,
         namespace: str,
@@ -522,7 +522,7 @@ class CoreV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_namespaced_persistent_volume_claim(
         self,
         namespace: str,
@@ -533,7 +533,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_namespaced_persistent_volume_claim(
         self,
         namespace: str,
@@ -553,7 +553,7 @@ class CoreV1Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespaced_persistent_volume_claim(
         self,
         name: str,
@@ -561,7 +561,7 @@ class CoreV1Api:
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_persistent_volume_claim(
         self,
         name: str,
@@ -573,7 +573,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_namespaced_persistent_volume_claim(
         self,
         name: str,
@@ -586,7 +586,7 @@ class CoreV1Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_persistent_volume_claim(
         self,
         name: str,
@@ -599,7 +599,7 @@ class CoreV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespaced_persistent_volume_claim_status(
         self,
         name: str,
@@ -607,7 +607,7 @@ class CoreV1Api:
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_persistent_volume_claim_status(
         self,
         name: str,
@@ -619,7 +619,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_persistent_volume_claim_status(
         self,
         name: str,
@@ -632,7 +632,7 @@ class CoreV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_namespaced_pod(
         self,
         namespace: str,
@@ -649,7 +649,7 @@ class CoreV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_namespaced_pod(
         self,
         namespace: str,
@@ -660,7 +660,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_namespaced_pod(
         self,
         namespace: str,
@@ -680,7 +680,7 @@ class CoreV1Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespaced_pod(
         self,
         name: str,
@@ -688,7 +688,7 @@ class CoreV1Api:
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_pod(
         self,
         name: str,
@@ -700,7 +700,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_namespaced_pod(
         self,
         name: str,
@@ -713,7 +713,7 @@ class CoreV1Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_pod(
         self,
         name: str,
@@ -726,7 +726,7 @@ class CoreV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_get_namespaced_pod_attach(
         self,
         name: str,
@@ -738,7 +738,7 @@ class CoreV1Api:
         stdout: typing.Optional[bool] = ...,
         tty: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_post_namespaced_pod_attach(
         self,
         name: str,
@@ -750,7 +750,7 @@ class CoreV1Api:
         stdout: typing.Optional[bool] = ...,
         tty: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_namespaced_pod_binding(
         self,
         name: str,
@@ -762,7 +762,7 @@ class CoreV1Api:
         field_validation: typing.Optional[str] = ...,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespaced_pod_ephemeralcontainers(
         self,
         name: str,
@@ -770,7 +770,7 @@ class CoreV1Api:
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_pod_ephemeralcontainers(
         self,
         name: str,
@@ -782,7 +782,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_pod_ephemeralcontainers(
         self,
         name: str,
@@ -795,7 +795,7 @@ class CoreV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_namespaced_pod_eviction(
         self,
         name: str,
@@ -807,7 +807,7 @@ class CoreV1Api:
         field_validation: typing.Optional[str] = ...,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_get_namespaced_pod_exec(
         self,
         name: str,
@@ -820,7 +820,7 @@ class CoreV1Api:
         stdout: typing.Optional[bool] = ...,
         tty: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_post_namespaced_pod_exec(
         self,
         name: str,
@@ -833,7 +833,7 @@ class CoreV1Api:
         stdout: typing.Optional[bool] = ...,
         tty: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespaced_pod_log(
         self,
         name: str,
@@ -849,7 +849,7 @@ class CoreV1Api:
         tail_lines: typing.Optional[int] = ...,
         timestamps: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_get_namespaced_pod_portforward(
         self,
         name: str,
@@ -857,7 +857,7 @@ class CoreV1Api:
         *,
         ports: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_post_namespaced_pod_portforward(
         self,
         name: str,
@@ -865,7 +865,7 @@ class CoreV1Api:
         *,
         ports: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_get_namespaced_pod_proxy(
         self,
         name: str,
@@ -873,7 +873,7 @@ class CoreV1Api:
         *,
         path: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_put_namespaced_pod_proxy(
         self,
         name: str,
@@ -881,7 +881,7 @@ class CoreV1Api:
         *,
         path: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_post_namespaced_pod_proxy(
         self,
         name: str,
@@ -889,7 +889,7 @@ class CoreV1Api:
         *,
         path: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_delete_namespaced_pod_proxy(
         self,
         name: str,
@@ -897,7 +897,7 @@ class CoreV1Api:
         *,
         path: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_options_namespaced_pod_proxy(
         self,
         name: str,
@@ -905,7 +905,7 @@ class CoreV1Api:
         *,
         path: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_head_namespaced_pod_proxy(
         self,
         name: str,
@@ -913,7 +913,7 @@ class CoreV1Api:
         *,
         path: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_patch_namespaced_pod_proxy(
         self,
         name: str,
@@ -921,7 +921,7 @@ class CoreV1Api:
         *,
         path: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_get_namespaced_pod_proxy_with_path(
         self,
         name: str,
@@ -930,7 +930,7 @@ class CoreV1Api:
         *,
         path2: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_put_namespaced_pod_proxy_with_path(
         self,
         name: str,
@@ -939,7 +939,7 @@ class CoreV1Api:
         *,
         path2: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_post_namespaced_pod_proxy_with_path(
         self,
         name: str,
@@ -948,7 +948,7 @@ class CoreV1Api:
         *,
         path2: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_delete_namespaced_pod_proxy_with_path(
         self,
         name: str,
@@ -957,7 +957,7 @@ class CoreV1Api:
         *,
         path2: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_options_namespaced_pod_proxy_with_path(
         self,
         name: str,
@@ -966,7 +966,7 @@ class CoreV1Api:
         *,
         path2: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_head_namespaced_pod_proxy_with_path(
         self,
         name: str,
@@ -975,7 +975,7 @@ class CoreV1Api:
         *,
         path2: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_patch_namespaced_pod_proxy_with_path(
         self,
         name: str,
@@ -984,7 +984,7 @@ class CoreV1Api:
         *,
         path2: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespaced_pod_status(
         self,
         name: str,
@@ -992,7 +992,7 @@ class CoreV1Api:
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_pod_status(
         self,
         name: str,
@@ -1004,7 +1004,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_pod_status(
         self,
         name: str,
@@ -1017,7 +1017,7 @@ class CoreV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_namespaced_pod_template(
         self,
         namespace: str,
@@ -1034,7 +1034,7 @@ class CoreV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_namespaced_pod_template(
         self,
         namespace: str,
@@ -1045,7 +1045,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_namespaced_pod_template(
         self,
         namespace: str,
@@ -1065,7 +1065,7 @@ class CoreV1Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespaced_pod_template(
         self,
         name: str,
@@ -1073,7 +1073,7 @@ class CoreV1Api:
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_pod_template(
         self,
         name: str,
@@ -1085,7 +1085,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_namespaced_pod_template(
         self,
         name: str,
@@ -1098,7 +1098,7 @@ class CoreV1Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_pod_template(
         self,
         name: str,
@@ -1111,7 +1111,7 @@ class CoreV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_namespaced_replication_controller(
         self,
         namespace: str,
@@ -1128,7 +1128,7 @@ class CoreV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_namespaced_replication_controller(
         self,
         namespace: str,
@@ -1139,7 +1139,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_namespaced_replication_controller(
         self,
         namespace: str,
@@ -1159,7 +1159,7 @@ class CoreV1Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespaced_replication_controller(
         self,
         name: str,
@@ -1167,7 +1167,7 @@ class CoreV1Api:
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_replication_controller(
         self,
         name: str,
@@ -1179,7 +1179,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_namespaced_replication_controller(
         self,
         name: str,
@@ -1192,7 +1192,7 @@ class CoreV1Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_replication_controller(
         self,
         name: str,
@@ -1205,7 +1205,7 @@ class CoreV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespaced_replication_controller_scale(
         self,
         name: str,
@@ -1213,7 +1213,7 @@ class CoreV1Api:
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_replication_controller_scale(
         self,
         name: str,
@@ -1225,7 +1225,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_replication_controller_scale(
         self,
         name: str,
@@ -1238,7 +1238,7 @@ class CoreV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespaced_replication_controller_status(
         self,
         name: str,
@@ -1246,7 +1246,7 @@ class CoreV1Api:
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_replication_controller_status(
         self,
         name: str,
@@ -1258,7 +1258,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_replication_controller_status(
         self,
         name: str,
@@ -1271,7 +1271,7 @@ class CoreV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_namespaced_resource_quota(
         self,
         namespace: str,
@@ -1288,7 +1288,7 @@ class CoreV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_namespaced_resource_quota(
         self,
         namespace: str,
@@ -1299,7 +1299,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_namespaced_resource_quota(
         self,
         namespace: str,
@@ -1319,7 +1319,7 @@ class CoreV1Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespaced_resource_quota(
         self,
         name: str,
@@ -1327,7 +1327,7 @@ class CoreV1Api:
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_resource_quota(
         self,
         name: str,
@@ -1339,7 +1339,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_namespaced_resource_quota(
         self,
         name: str,
@@ -1352,7 +1352,7 @@ class CoreV1Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_resource_quota(
         self,
         name: str,
@@ -1365,7 +1365,7 @@ class CoreV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespaced_resource_quota_status(
         self,
         name: str,
@@ -1373,7 +1373,7 @@ class CoreV1Api:
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_resource_quota_status(
         self,
         name: str,
@@ -1385,7 +1385,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_resource_quota_status(
         self,
         name: str,
@@ -1398,7 +1398,7 @@ class CoreV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_namespaced_secret(
         self,
         namespace: str,
@@ -1415,7 +1415,7 @@ class CoreV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_namespaced_secret(
         self,
         namespace: str,
@@ -1426,7 +1426,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_namespaced_secret(
         self,
         namespace: str,
@@ -1446,7 +1446,7 @@ class CoreV1Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespaced_secret(
         self,
         name: str,
@@ -1454,7 +1454,7 @@ class CoreV1Api:
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_secret(
         self,
         name: str,
@@ -1466,7 +1466,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_namespaced_secret(
         self,
         name: str,
@@ -1479,7 +1479,7 @@ class CoreV1Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_secret(
         self,
         name: str,
@@ -1492,7 +1492,7 @@ class CoreV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_namespaced_service_account(
         self,
         namespace: str,
@@ -1509,7 +1509,7 @@ class CoreV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_namespaced_service_account(
         self,
         namespace: str,
@@ -1520,7 +1520,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_namespaced_service_account(
         self,
         namespace: str,
@@ -1540,7 +1540,7 @@ class CoreV1Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespaced_service_account(
         self,
         name: str,
@@ -1548,7 +1548,7 @@ class CoreV1Api:
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_service_account(
         self,
         name: str,
@@ -1560,7 +1560,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_namespaced_service_account(
         self,
         name: str,
@@ -1573,7 +1573,7 @@ class CoreV1Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_service_account(
         self,
         name: str,
@@ -1586,7 +1586,7 @@ class CoreV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_namespaced_service_account_token(
         self,
         name: str,
@@ -1598,7 +1598,7 @@ class CoreV1Api:
         field_validation: typing.Optional[str] = ...,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_namespaced_service(
         self,
         namespace: str,
@@ -1615,7 +1615,7 @@ class CoreV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_namespaced_service(
         self,
         namespace: str,
@@ -1626,7 +1626,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_namespaced_service(
         self,
         namespace: str,
@@ -1646,7 +1646,7 @@ class CoreV1Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespaced_service(
         self,
         name: str,
@@ -1654,7 +1654,7 @@ class CoreV1Api:
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_service(
         self,
         name: str,
@@ -1666,7 +1666,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_namespaced_service(
         self,
         name: str,
@@ -1679,7 +1679,7 @@ class CoreV1Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_service(
         self,
         name: str,
@@ -1692,7 +1692,7 @@ class CoreV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_get_namespaced_service_proxy(
         self,
         name: str,
@@ -1700,7 +1700,7 @@ class CoreV1Api:
         *,
         path: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_put_namespaced_service_proxy(
         self,
         name: str,
@@ -1708,7 +1708,7 @@ class CoreV1Api:
         *,
         path: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_post_namespaced_service_proxy(
         self,
         name: str,
@@ -1716,7 +1716,7 @@ class CoreV1Api:
         *,
         path: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_delete_namespaced_service_proxy(
         self,
         name: str,
@@ -1724,7 +1724,7 @@ class CoreV1Api:
         *,
         path: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_options_namespaced_service_proxy(
         self,
         name: str,
@@ -1732,7 +1732,7 @@ class CoreV1Api:
         *,
         path: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_head_namespaced_service_proxy(
         self,
         name: str,
@@ -1740,7 +1740,7 @@ class CoreV1Api:
         *,
         path: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_patch_namespaced_service_proxy(
         self,
         name: str,
@@ -1748,7 +1748,7 @@ class CoreV1Api:
         *,
         path: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_get_namespaced_service_proxy_with_path(
         self,
         name: str,
@@ -1757,7 +1757,7 @@ class CoreV1Api:
         *,
         path2: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_put_namespaced_service_proxy_with_path(
         self,
         name: str,
@@ -1766,7 +1766,7 @@ class CoreV1Api:
         *,
         path2: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_post_namespaced_service_proxy_with_path(
         self,
         name: str,
@@ -1775,7 +1775,7 @@ class CoreV1Api:
         *,
         path2: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_delete_namespaced_service_proxy_with_path(
         self,
         name: str,
@@ -1784,7 +1784,7 @@ class CoreV1Api:
         *,
         path2: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_options_namespaced_service_proxy_with_path(
         self,
         name: str,
@@ -1793,7 +1793,7 @@ class CoreV1Api:
         *,
         path2: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_head_namespaced_service_proxy_with_path(
         self,
         name: str,
@@ -1802,7 +1802,7 @@ class CoreV1Api:
         *,
         path2: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_patch_namespaced_service_proxy_with_path(
         self,
         name: str,
@@ -1811,7 +1811,7 @@ class CoreV1Api:
         *,
         path2: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespaced_service_status(
         self,
         name: str,
@@ -1819,7 +1819,7 @@ class CoreV1Api:
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_service_status(
         self,
         name: str,
@@ -1831,7 +1831,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_service_status(
         self,
         name: str,
@@ -1844,7 +1844,7 @@ class CoreV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespace(self, name: str, *, pretty: typing.Optional[str] = ...) -> kubernetes.client.V1Namespace: ...
     def replace_namespace(
         self,
@@ -1856,7 +1856,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_namespace(
         self,
         name: str,
@@ -1868,7 +1868,7 @@ class CoreV1Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespace(
         self,
         name: str,
@@ -1880,7 +1880,7 @@ class CoreV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespace_finalize(
         self,
         name: str,
@@ -1891,14 +1891,14 @@ class CoreV1Api:
         field_validation: typing.Optional[str] = ...,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespace_status(
         self,
         name: str,
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespace_status(
         self,
         name: str,
@@ -1909,7 +1909,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespace_status(
         self,
         name: str,
@@ -1921,7 +1921,7 @@ class CoreV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_node(
         self,
         *,
@@ -1937,7 +1937,7 @@ class CoreV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_node(
         self,
         body: kubernetes.client.V1Node,
@@ -1947,7 +1947,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_node(
         self,
         *,
@@ -1966,7 +1966,7 @@ class CoreV1Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_node(self, name: str, *, pretty: typing.Optional[str] = ...) -> kubernetes.client.V1Node: ...
     def replace_node(
         self,
@@ -1978,7 +1978,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_node(
         self,
         name: str,
@@ -1990,7 +1990,7 @@ class CoreV1Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_node(
         self,
         name: str,
@@ -2002,7 +2002,7 @@ class CoreV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_get_node_proxy(self, name: str, *, path: typing.Optional[str] = ...) -> str: ...
     def connect_put_node_proxy(self, name: str, *, path: typing.Optional[str] = ...) -> str: ...
     def connect_post_node_proxy(self, name: str, *, path: typing.Optional[str] = ...) -> str: ...
@@ -2020,7 +2020,7 @@ class CoreV1Api:
         *,
         path2: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_options_node_proxy_with_path(
         self,
         name: str,
@@ -2028,7 +2028,7 @@ class CoreV1Api:
         *,
         path2: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def connect_head_node_proxy_with_path(self, name: str, path: str, *, path2: typing.Optional[str] = ...) -> str: ...
     def connect_patch_node_proxy_with_path(self, name: str, path: str, *, path2: typing.Optional[str] = ...) -> str: ...
     def read_node_status(self, name: str, *, pretty: typing.Optional[str] = ...) -> kubernetes.client.V1Node: ...
@@ -2042,7 +2042,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_node_status(
         self,
         name: str,
@@ -2054,7 +2054,7 @@ class CoreV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_persistent_volume_claim_for_all_namespaces(
         self,
         *,
@@ -2070,7 +2070,7 @@ class CoreV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_persistent_volume(
         self,
         *,
@@ -2086,7 +2086,7 @@ class CoreV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_persistent_volume(
         self,
         body: kubernetes.client.V1PersistentVolume,
@@ -2096,7 +2096,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_persistent_volume(
         self,
         *,
@@ -2115,14 +2115,14 @@ class CoreV1Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_persistent_volume(
         self,
         name: str,
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_persistent_volume(
         self,
         name: str,
@@ -2133,7 +2133,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_persistent_volume(
         self,
         name: str,
@@ -2145,7 +2145,7 @@ class CoreV1Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_persistent_volume(
         self,
         name: str,
@@ -2157,14 +2157,14 @@ class CoreV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_persistent_volume_status(
         self,
         name: str,
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_persistent_volume_status(
         self,
         name: str,
@@ -2175,7 +2175,7 @@ class CoreV1Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_persistent_volume_status(
         self,
         name: str,
@@ -2187,7 +2187,7 @@ class CoreV1Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_pod_for_all_namespaces(
         self,
         *,
@@ -2203,7 +2203,7 @@ class CoreV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_pod_template_for_all_namespaces(
         self,
         *,
@@ -2219,7 +2219,7 @@ class CoreV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_replication_controller_for_all_namespaces(
         self,
         *,
@@ -2235,7 +2235,7 @@ class CoreV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_resource_quota_for_all_namespaces(
         self,
         *,
@@ -2251,7 +2251,7 @@ class CoreV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_secret_for_all_namespaces(
         self,
         *,
@@ -2267,7 +2267,7 @@ class CoreV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_service_account_for_all_namespaces(
         self,
         *,
@@ -2283,7 +2283,7 @@ class CoreV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_service_for_all_namespaces(
         self,
         *,
@@ -2299,4 +2299,4 @@ class CoreV1Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...

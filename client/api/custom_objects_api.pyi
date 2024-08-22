@@ -23,7 +23,7 @@ class CustomObjectsApi:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_cluster_custom_object(
         self,
         group: str,
@@ -36,7 +36,7 @@ class CustomObjectsApi:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_cluster_custom_object(
         self,
         group: str,
@@ -51,7 +51,7 @@ class CustomObjectsApi:
         propagation_policy: typing.Optional[str] = ...,
         dry_run: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_namespaced_custom_object(
         self,
         group: str,
@@ -70,7 +70,7 @@ class CustomObjectsApi:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_namespaced_custom_object(
         self,
         group: str,
@@ -84,7 +84,7 @@ class CustomObjectsApi:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_namespaced_custom_object(
         self,
         group: str,
@@ -100,7 +100,7 @@ class CustomObjectsApi:
         propagation_policy: typing.Optional[str] = ...,
         dry_run: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def get_cluster_custom_object(self, group: str, version: str, plural: str, name: str) -> typing.Any: ...
     def replace_cluster_custom_object(
         self,
@@ -114,7 +114,7 @@ class CustomObjectsApi:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_cluster_custom_object(
         self,
         group: str,
@@ -128,7 +128,7 @@ class CustomObjectsApi:
         propagation_policy: typing.Optional[str] = ...,
         dry_run: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_cluster_custom_object(
         self,
         group: str,
@@ -142,7 +142,7 @@ class CustomObjectsApi:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def get_cluster_custom_object_status(self, group: str, version: str, plural: str, name: str) -> typing.Any: ...
     def replace_cluster_custom_object_status(
         self,
@@ -156,7 +156,7 @@ class CustomObjectsApi:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_cluster_custom_object_status(
         self,
         group: str,
@@ -170,7 +170,7 @@ class CustomObjectsApi:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def get_cluster_custom_object_scale(self, group: str, version: str, plural: str, name: str) -> typing.Any: ...
     def replace_cluster_custom_object_scale(
         self,
@@ -184,7 +184,7 @@ class CustomObjectsApi:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_cluster_custom_object_scale(
         self,
         group: str,
@@ -198,7 +198,7 @@ class CustomObjectsApi:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def get_namespaced_custom_object(
         self,
         group: str,
@@ -207,7 +207,7 @@ class CustomObjectsApi:
         plural: str,
         name: str,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_custom_object(
         self,
         group: str,
@@ -221,7 +221,7 @@ class CustomObjectsApi:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_namespaced_custom_object(
         self,
         group: str,
@@ -236,7 +236,7 @@ class CustomObjectsApi:
         propagation_policy: typing.Optional[str] = ...,
         dry_run: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_custom_object(
         self,
         group: str,
@@ -251,7 +251,7 @@ class CustomObjectsApi:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def get_namespaced_custom_object_status(
         self,
         group: str,
@@ -260,7 +260,7 @@ class CustomObjectsApi:
         plural: str,
         name: str,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_custom_object_status(
         self,
         group: str,
@@ -274,7 +274,7 @@ class CustomObjectsApi:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_custom_object_status(
         self,
         group: str,
@@ -289,7 +289,7 @@ class CustomObjectsApi:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def get_namespaced_custom_object_scale(
         self,
         group: str,
@@ -298,7 +298,7 @@ class CustomObjectsApi:
         plural: str,
         name: str,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_custom_object_scale(
         self,
         group: str,
@@ -312,7 +312,7 @@ class CustomObjectsApi:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_custom_object_scale(
         self,
         group: str,
@@ -327,4 +327,4 @@ class CustomObjectsApi:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...

@@ -22,7 +22,7 @@ class ResourceV1alpha2Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_namespaced_pod_scheduling_context(
         self,
         namespace: str,
@@ -33,7 +33,7 @@ class ResourceV1alpha2Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_namespaced_pod_scheduling_context(
         self,
         namespace: str,
@@ -53,7 +53,7 @@ class ResourceV1alpha2Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespaced_pod_scheduling_context(
         self,
         name: str,
@@ -61,7 +61,7 @@ class ResourceV1alpha2Api:
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_pod_scheduling_context(
         self,
         name: str,
@@ -73,7 +73,7 @@ class ResourceV1alpha2Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_namespaced_pod_scheduling_context(
         self,
         name: str,
@@ -86,7 +86,7 @@ class ResourceV1alpha2Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_pod_scheduling_context(
         self,
         name: str,
@@ -99,7 +99,7 @@ class ResourceV1alpha2Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespaced_pod_scheduling_context_status(
         self,
         name: str,
@@ -107,7 +107,7 @@ class ResourceV1alpha2Api:
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_pod_scheduling_context_status(
         self,
         name: str,
@@ -119,7 +119,7 @@ class ResourceV1alpha2Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_pod_scheduling_context_status(
         self,
         name: str,
@@ -132,7 +132,7 @@ class ResourceV1alpha2Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_namespaced_resource_claim_parameters(
         self,
         namespace: str,
@@ -149,7 +149,7 @@ class ResourceV1alpha2Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_namespaced_resource_claim_parameters(
         self,
         namespace: str,
@@ -160,7 +160,7 @@ class ResourceV1alpha2Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_namespaced_resource_claim_parameters(
         self,
         namespace: str,
@@ -180,7 +180,7 @@ class ResourceV1alpha2Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespaced_resource_claim_parameters(
         self,
         name: str,
@@ -188,7 +188,7 @@ class ResourceV1alpha2Api:
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_resource_claim_parameters(
         self,
         name: str,
@@ -200,7 +200,7 @@ class ResourceV1alpha2Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_namespaced_resource_claim_parameters(
         self,
         name: str,
@@ -213,7 +213,7 @@ class ResourceV1alpha2Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_resource_claim_parameters(
         self,
         name: str,
@@ -226,7 +226,7 @@ class ResourceV1alpha2Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_namespaced_resource_claim(
         self,
         namespace: str,
@@ -243,7 +243,7 @@ class ResourceV1alpha2Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_namespaced_resource_claim(
         self,
         namespace: str,
@@ -254,7 +254,7 @@ class ResourceV1alpha2Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_namespaced_resource_claim(
         self,
         namespace: str,
@@ -274,7 +274,7 @@ class ResourceV1alpha2Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespaced_resource_claim(
         self,
         name: str,
@@ -282,7 +282,7 @@ class ResourceV1alpha2Api:
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_resource_claim(
         self,
         name: str,
@@ -294,7 +294,7 @@ class ResourceV1alpha2Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_namespaced_resource_claim(
         self,
         name: str,
@@ -307,7 +307,7 @@ class ResourceV1alpha2Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_resource_claim(
         self,
         name: str,
@@ -320,7 +320,7 @@ class ResourceV1alpha2Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespaced_resource_claim_status(
         self,
         name: str,
@@ -328,7 +328,7 @@ class ResourceV1alpha2Api:
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_resource_claim_status(
         self,
         name: str,
@@ -340,7 +340,7 @@ class ResourceV1alpha2Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_resource_claim_status(
         self,
         name: str,
@@ -353,7 +353,7 @@ class ResourceV1alpha2Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_namespaced_resource_claim_template(
         self,
         namespace: str,
@@ -370,7 +370,7 @@ class ResourceV1alpha2Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_namespaced_resource_claim_template(
         self,
         namespace: str,
@@ -381,7 +381,7 @@ class ResourceV1alpha2Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_namespaced_resource_claim_template(
         self,
         namespace: str,
@@ -401,7 +401,7 @@ class ResourceV1alpha2Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespaced_resource_claim_template(
         self,
         name: str,
@@ -409,7 +409,7 @@ class ResourceV1alpha2Api:
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_resource_claim_template(
         self,
         name: str,
@@ -421,7 +421,7 @@ class ResourceV1alpha2Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_namespaced_resource_claim_template(
         self,
         name: str,
@@ -434,7 +434,7 @@ class ResourceV1alpha2Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_resource_claim_template(
         self,
         name: str,
@@ -447,7 +447,7 @@ class ResourceV1alpha2Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_namespaced_resource_class_parameters(
         self,
         namespace: str,
@@ -464,7 +464,7 @@ class ResourceV1alpha2Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_namespaced_resource_class_parameters(
         self,
         namespace: str,
@@ -475,7 +475,7 @@ class ResourceV1alpha2Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_namespaced_resource_class_parameters(
         self,
         namespace: str,
@@ -495,7 +495,7 @@ class ResourceV1alpha2Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_namespaced_resource_class_parameters(
         self,
         name: str,
@@ -503,7 +503,7 @@ class ResourceV1alpha2Api:
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_namespaced_resource_class_parameters(
         self,
         name: str,
@@ -515,7 +515,7 @@ class ResourceV1alpha2Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_namespaced_resource_class_parameters(
         self,
         name: str,
@@ -528,7 +528,7 @@ class ResourceV1alpha2Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_namespaced_resource_class_parameters(
         self,
         name: str,
@@ -541,7 +541,7 @@ class ResourceV1alpha2Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_pod_scheduling_context_for_all_namespaces(
         self,
         *,
@@ -557,7 +557,7 @@ class ResourceV1alpha2Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_resource_claim_parameters_for_all_namespaces(
         self,
         *,
@@ -573,7 +573,7 @@ class ResourceV1alpha2Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_resource_claim_for_all_namespaces(
         self,
         *,
@@ -589,7 +589,7 @@ class ResourceV1alpha2Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_resource_claim_template_for_all_namespaces(
         self,
         *,
@@ -605,7 +605,7 @@ class ResourceV1alpha2Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_resource_class(
         self,
         *,
@@ -621,7 +621,7 @@ class ResourceV1alpha2Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_resource_class(
         self,
         body: kubernetes.client.V1alpha2ResourceClass,
@@ -631,7 +631,7 @@ class ResourceV1alpha2Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_resource_class(
         self,
         *,
@@ -650,14 +650,14 @@ class ResourceV1alpha2Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_resource_class(
         self,
         name: str,
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_resource_class(
         self,
         name: str,
@@ -668,7 +668,7 @@ class ResourceV1alpha2Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_resource_class(
         self,
         name: str,
@@ -680,7 +680,7 @@ class ResourceV1alpha2Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_resource_class(
         self,
         name: str,
@@ -692,7 +692,7 @@ class ResourceV1alpha2Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_resource_class_parameters_for_all_namespaces(
         self,
         *,
@@ -708,7 +708,7 @@ class ResourceV1alpha2Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def list_resource_slice(
         self,
         *,
@@ -724,7 +724,7 @@ class ResourceV1alpha2Api:
         timeout_seconds: typing.Optional[int] = ...,
         watch: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_resource_slice(
         self,
         body: kubernetes.client.V1alpha2ResourceSlice,
@@ -734,7 +734,7 @@ class ResourceV1alpha2Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_collection_resource_slice(
         self,
         *,
@@ -753,14 +753,14 @@ class ResourceV1alpha2Api:
         send_initial_events: typing.Optional[bool] = ...,
         timeout_seconds: typing.Optional[int] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def read_resource_slice(
         self,
         name: str,
         *,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def replace_resource_slice(
         self,
         name: str,
@@ -771,7 +771,7 @@ class ResourceV1alpha2Api:
         field_manager: typing.Optional[str] = ...,
         field_validation: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def delete_resource_slice(
         self,
         name: str,
@@ -783,7 +783,7 @@ class ResourceV1alpha2Api:
         orphan_dependents: typing.Optional[bool] = ...,
         propagation_policy: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def patch_resource_slice(
         self,
         name: str,
@@ -795,4 +795,4 @@ class ResourceV1alpha2Api:
         field_validation: typing.Optional[str] = ...,
         force: typing.Optional[bool] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...

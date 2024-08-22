@@ -16,7 +16,7 @@ class AuthorizationV1Api:
         field_validation: typing.Optional[str] = ...,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_self_subject_access_review(
         self,
         body: kubernetes.client.V1SelfSubjectAccessReview,
@@ -26,7 +26,7 @@ class AuthorizationV1Api:
         field_validation: typing.Optional[str] = ...,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_self_subject_rules_review(
         self,
         body: kubernetes.client.V1SelfSubjectRulesReview,
@@ -36,7 +36,7 @@ class AuthorizationV1Api:
         field_validation: typing.Optional[str] = ...,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
     def create_subject_access_review(
         self,
         body: kubernetes.client.V1SubjectAccessReview,
@@ -46,4 +46,4 @@ class AuthorizationV1Api:
         field_validation: typing.Optional[str] = ...,
         pretty: typing.Optional[str] = ...,
         _preload_content: bool = False,
-    ) -> BaseHttpRequest: ...
+    ) -> BaseHTTPResponse: ...
