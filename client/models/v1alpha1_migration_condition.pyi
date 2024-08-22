@@ -1,0 +1,20 @@
+import datetime
+import typing
+from urllib3 import BaseHTTPResponse
+
+class V1alpha1MigrationCondition:
+    last_update_time: typing.Optional[datetime.datetime]
+    message: typing.Optional[str]
+    reason: typing.Optional[str]
+    status: str
+    type: str
+    def __init__(
+        self,
+        *,
+        last_update_time: typing.Optional[datetime.datetime] = ...,
+        message: typing.Optional[str] = ...,
+        reason: typing.Optional[str] = ...,
+        status: str,
+        type: str,
+    ) -> None: ...
+    def to_dict(self) -> typing.Any: ...

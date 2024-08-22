@@ -1,0 +1,9 @@
+import typing
+from urllib3 import BaseHTTPResponse
+
+import kubernetes.client
+
+class V1CSINodeSpec:
+    drivers: list[kubernetes.client.V1CSINodeDriver]
+    def __init__(self, *, drivers: list[kubernetes.client.V1CSINodeDriver]) -> None: ...
+    def to_dict(self) -> typing.Any: ...

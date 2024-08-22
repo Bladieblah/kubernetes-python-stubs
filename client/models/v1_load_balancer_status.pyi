@@ -1,0 +1,9 @@
+import typing
+from urllib3 import BaseHTTPResponse
+
+import kubernetes.client
+
+class V1LoadBalancerStatus:
+    ingress: typing.Optional[list[kubernetes.client.V1LoadBalancerIngress]]
+    def __init__(self, *, ingress: typing.Optional[list[kubernetes.client.V1LoadBalancerIngress]] = ...) -> None: ...
+    def to_dict(self) -> typing.Any: ...
