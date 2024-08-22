@@ -1,5 +1,4 @@
 import typing
-from urllib3 import BaseHTTPResponse
 
 class RbacV1Subject:
     api_group: typing.Optional[str]

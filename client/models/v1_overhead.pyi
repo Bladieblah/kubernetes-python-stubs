@@ -1,5 +1,4 @@
 import typing
-from urllib3 import BaseHTTPResponse
 
 class V1Overhead:
     pod_fixed: typing.Optional[dict[str, str]]

@@ -1,6 +1,5 @@
 import datetime
 import typing
-from urllib3 import BaseHTTPResponse
 
 class CoreV1EventSeries:
     count: typing.Optional[int]

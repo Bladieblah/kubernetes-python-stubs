@@ -1,5 +1,4 @@
 import typing
-from urllib3 import BaseHTTPResponse
 
 class V1CustomResourceDefinitionNames:
     categories: typing.Optional[list[str]]

@@ -1,5 +1,4 @@
 import typing
-from urllib3 import BaseHTTPResponse
 
 class V1RuleWithOperations:
     api_groups: typing.Optional[list[str]]

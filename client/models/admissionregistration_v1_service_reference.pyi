@@ -1,5 +1,4 @@
 import typing
-from urllib3 import BaseHTTPResponse
 
 class AdmissionregistrationV1ServiceReference:
     name: str

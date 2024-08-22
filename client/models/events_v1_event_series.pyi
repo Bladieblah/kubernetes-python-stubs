@@ -1,6 +1,5 @@
 import datetime
 import typing
-from urllib3 import BaseHTTPResponse
 
 class EventsV1EventSeries:
     count: int

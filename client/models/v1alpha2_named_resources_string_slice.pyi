@@ -1,5 +1,4 @@
 import typing
-from urllib3 import BaseHTTPResponse
 
 class V1alpha2NamedResourcesStringSlice:
     strings: list[str]

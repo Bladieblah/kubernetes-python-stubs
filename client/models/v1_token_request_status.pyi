@@ -1,6 +1,5 @@
 import datetime
 import typing
-from urllib3 import BaseHTTPResponse
 
 class V1TokenRequestStatus:
     expiration_timestamp: datetime.datetime

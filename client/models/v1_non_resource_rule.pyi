@@ -1,5 +1,4 @@
 import typing
-from urllib3 import BaseHTTPResponse
 
 class V1NonResourceRule:
     non_resource_ur_ls: typing.Optional[list[str]]

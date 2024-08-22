@@ -1,6 +1,5 @@
 import datetime
 import typing
-from urllib3 import BaseHTTPResponse
 
 class V1LeaseSpec:
     acquire_time: typing.Optional[datetime.datetime]

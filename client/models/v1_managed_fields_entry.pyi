@@ -1,6 +1,5 @@
 import datetime
 import typing
-from urllib3 import BaseHTTPResponse
 
 class V1ManagedFieldsEntry:
     api_version: typing.Optional[str]

@@ -1,5 +1,4 @@
 import typing
-from urllib3 import BaseHTTPResponse
 
 class V1NodeRuntimeHandlerFeatures:
     recursive_read_only_mounts: typing.Optional[bool]

@@ -1,5 +1,4 @@
 import typing
-from urllib3 import BaseHTTPResponse
 
 class V1ResourcePolicyRule:
     api_groups: list[str]

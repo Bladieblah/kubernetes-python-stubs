@@ -1,5 +1,4 @@
 import typing
-from urllib3 import BaseHTTPResponse
 
 class V1alpha2PodSchedulingContextSpec:
     potential_nodes: typing.Optional[list[str]]

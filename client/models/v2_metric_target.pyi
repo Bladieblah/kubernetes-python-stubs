@@ -1,5 +1,4 @@
 import typing
-from urllib3 import BaseHTTPResponse
 
 class V2MetricTarget:
     average_utilization: typing.Optional[int]

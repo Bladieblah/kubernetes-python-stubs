@@ -1,5 +1,4 @@
 import typing
-from urllib3 import BaseHTTPResponse
 
 class V1ValidationRule:
     field_path: typing.Optional[str]

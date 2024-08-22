@@ -1,5 +1,4 @@
 import typing
-from urllib3 import BaseHTTPResponse
 
 class V1ExecAction:
     command: typing.Optional[list[str]]

@@ -1,5 +1,4 @@
 import typing
-from urllib3 import BaseHTTPResponse
 
 class V1ClaimSource:
     resource_claim_name: typing.Optional[str]

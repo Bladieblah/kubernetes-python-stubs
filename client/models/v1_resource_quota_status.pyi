@@ -1,5 +1,4 @@
 import typing
-from urllib3 import BaseHTTPResponse
 
 class V1ResourceQuotaStatus:
     hard: typing.Optional[dict[str, str]]

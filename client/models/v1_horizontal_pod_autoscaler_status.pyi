@@ -1,6 +1,5 @@
 import datetime
 import typing
-from urllib3 import BaseHTTPResponse
 
 class V1HorizontalPodAutoscalerStatus:
     current_cpu_utilization_percentage: typing.Optional[int]

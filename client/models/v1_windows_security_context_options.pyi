@@ -1,5 +1,4 @@
 import typing
-from urllib3 import BaseHTTPResponse
 
 class V1WindowsSecurityContextOptions:
     gmsa_credential_spec: typing.Optional[str]

@@ -1,5 +1,4 @@
 import typing
-from urllib3 import BaseHTTPResponse
 
 class ApiextensionsV1ServiceReference:
     name: str

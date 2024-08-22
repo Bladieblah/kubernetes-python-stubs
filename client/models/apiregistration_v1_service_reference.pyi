@@ -1,5 +1,4 @@
 import typing
-from urllib3 import BaseHTTPResponse
 
 class ApiregistrationV1ServiceReference:
     name: typing.Optional[str]

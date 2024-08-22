@@ -1,5 +1,4 @@
 import typing
-from urllib3 import BaseHTTPResponse
 
 class V1QueuingConfiguration:
     hand_size: typing.Optional[int]

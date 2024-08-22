@@ -1,7 +1,7 @@
 import typing
-from urllib3 import BaseHTTPResponse
 
 import kubernetes.client
+from urllib3 import BaseHTTPResponse
 
 class CoreV1Api:
     def __init__(self, api_client: typing.Optional[kubernetes.client.ApiClient] = ...) -> None: ...

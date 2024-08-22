@@ -1,6 +1,5 @@
 import datetime
 import typing
-from urllib3 import BaseHTTPResponse
 
 class V1FlowSchemaCondition:
     last_transition_time: typing.Optional[datetime.datetime]

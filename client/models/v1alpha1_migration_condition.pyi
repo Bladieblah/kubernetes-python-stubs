@@ -1,6 +1,5 @@
 import datetime
 import typing
-from urllib3 import BaseHTTPResponse
 
 class V1alpha1MigrationCondition:
     last_update_time: typing.Optional[datetime.datetime]

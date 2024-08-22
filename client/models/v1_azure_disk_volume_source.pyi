@@ -1,5 +1,4 @@
 import typing
-from urllib3 import BaseHTTPResponse
 
 class V1AzureDiskVolumeSource:
     caching_mode: typing.Optional[str]

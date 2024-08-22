@@ -1,6 +1,5 @@
 import datetime
 import typing
-from urllib3 import BaseHTTPResponse
 
 class V1ContainerStateRunning:
     started_at: typing.Optional[datetime.datetime]

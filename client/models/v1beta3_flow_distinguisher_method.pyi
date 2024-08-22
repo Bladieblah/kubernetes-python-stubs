@@ -1,5 +1,4 @@
 import typing
-from urllib3 import BaseHTTPResponse
 
 class V1beta3FlowDistinguisherMethod:
     type: str
